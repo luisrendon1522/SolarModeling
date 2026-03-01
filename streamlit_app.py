@@ -379,7 +379,8 @@ def export_pdf_section():
 
     if st.button("📄 GENERAR REPORTE CIENTÍFICO PDF"):
         try:
-            pdf_data = [{"name": r['name'], "metrics": r['metrics']} for r in data["results"]]
+            # Pasar objetos completos con gráficas
+            pdf_data = [{"name": r['name'], "metrics": r['metrics'], "fig": r.get('fig'), "train_fig": r.get('train_fig')} for r in data["results"]]
             abs_path = os.path.abspath(pdf_path)
             with st.spinner("Generando PDF..."):
                 generate_pdf(
