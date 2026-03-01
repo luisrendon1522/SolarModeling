@@ -118,7 +118,7 @@ def main():
     st.sidebar.title("Configuración")
     
     st.title("📈 Modeling & Analysis Dashboard")
-    st.markdown("Plataforma para carga, modelado y comparación de algoritmos de regresión y ML.")
+    st.markdown("Regresión lineal, mínimos cuadrados, modelos de machine learning y redes neuronales.")
     st.markdown("---")
 
     # --- Sidebar: Carga de Datos ---
