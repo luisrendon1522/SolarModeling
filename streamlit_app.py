@@ -51,7 +51,7 @@ except ImportError:
 # Configuración de la página
 st.set_page_config(
     layout="wide",
-    page_title="Modeling & Analysis Dashboard",
+    page_title="Modelación y Simulación de Sistemas",
     page_icon="📈"
 )
 
@@ -117,7 +117,7 @@ def main():
     st.sidebar.image("https://img.icons8.com/fluency/96/data-analytics.png", width=70)
     st.sidebar.title("Configuración")
     
-    st.title("📈 Modeling & Analysis Dashboard")
+    st.title("📈 Modelación y Simulación de Sistemas")
     st.markdown("Regresión lineal, mínimos cuadrados, modelos de machine learning y redes neuronales.")
     st.markdown("---")
 
